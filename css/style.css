@@ -16,5 +16,9 @@ input{background: darkmagenta; padding: 8px 16px; display: inline-block; border:
 input[type="checkbox"] {
     display: none;
 }
+.label1{padding: 8px 15px; display: inline-block; background: darkmagenta; color: white}
+.label1::before{display: block; content: "before text"}
+.input1{outline: none; width: 0; height: 0; overflow: hidden}
+.input1:checked~.label1::before{content: "checked text"}
 
 
