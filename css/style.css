@@ -1,0 +1,20 @@
+.first_p::first-letter{color: red}
+.second_p::first-line{color: red}
+.third_p::selection{background: green; color: white}
+.fourth_p:before{content: "Начало: "; color: red}
+.fourth_p:after{content: ":Конец "; color: green}
+li:not(.unused,.last) { color: red; }
+li:not(.unused,.first) { color: green; }
+footer{display: flex; justify-content: space-between; align-items:stretch; }
+article{height: auto;flex: 1; box-shadow: 2px 10px 10px rgba(0,0,0,0.7) inset}
+article:not(.last){border-right: 1px solid grey; margin-right: 20px}
+.first_article img{float: left;}
+article h3{color: blue; text-shadow: 2px 2px grey}
+article a{color: purple; display: inline-block}
+input{background: darkmagenta; padding: 8px 16px; display: inline-block; border: none; color: white;}
+.link:hover{border: 2px blue solid; transition: 1s all}
+input[type="checkbox"] {
+    display: none;
+}
+
+
